@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/home-landing.png");
+  background: linear-gradient(to bottom, var(--background), var(--deep-purple));
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -117,4 +117,14 @@
   border-radius: 0.5rem;
   background: linear-gradient(to right, var(--accent), var(--dark-purple));
   box-shadow: inset 0px 3px 5px var(--secondary);
+}
+
+@keyframes spinnerboy {
+  0% { transform: rotate(0turn); }
+  50% { transform: rotate(0.5turn);} 
+  100% { transform: rotate(1turn); }
+}
+
+.spinner{
+  animation: spinnerboy 3s ease-in-out infinite;
 }
